@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>ITComplex.GSSAPI.NET</id>
+    <version>0.2.0.0</version>
+    <title>GSSAPI.NET</title>
+    <authors>Igor Solomatov</authors>
+    <owners>IT Complex, LLC</owners>
+    <description>GSSAPI implementation wrapper for .NET. Contains client implementation and additional WebRequest authentication modules.</description>
+    <summary>GSSAPI implementation wrapper for .NET</summary>
+    <licenseUrl>https://github.com/SIGAN/gssapi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SIGAN/gssapi</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Added multiple (4.5+) targets</releaseNotes>
+    <copyright>IT Complex, LLC 2017</copyright>
+    <tags>GSSAPI .NET Wrapper Authentication C#</tags>
+    <dependencies></dependencies>
+    <references></references>
+  </metadata>
+  <files>
+    <file src="lib\**" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>

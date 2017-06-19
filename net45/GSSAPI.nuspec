@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GSSAPI.NET</id>
+    <version>$version$</version>
+    <title>GSSAPI.NET</title>
+    <authors>Igor Solomatov</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/SIGAN/gssapi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SIGAN/gssapi</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release. Client-mode only. Supports both x86 and x64.</releaseNotes>
+    <copyright>IT Complex, LLC 2017</copyright>
+    <tags>GSSAPI .NET Wrapper Authentication C#</tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>

@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F4DAEE41-A572-45B3-88DB-146D20D51C22}</ProjectGuid>
+    <ProjectGuid>{7622591F-3A8A-4954-B118-885F0C16AAEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GSSAPI</RootNamespace>
     <AssemblyName>GSSAPI</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,36 +41,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuthenticationModule\AuthenticationStateStore.cs" />
-    <Compile Include="Utility\AutoDisposing.cs" />
-    <Compile Include="Const.cs" />
-    <Compile Include="Utility\Cvt.cs" />
-    <Compile Include="Gss.cs" />
-    <Compile Include="AuthenticationModule\AuthenticationModuleBase.cs" />
-    <Compile Include="GssClient.cs" />
-    <Compile Include="GssClientAuth.cs" />
-    <Compile Include="GssClientState.cs" />
-    <Compile Include="GssContextFlags.cs" />
-    <Compile Include="AuthenticationModule\KerberosAuthenticationModule.cs" />
-    <Compile Include="Native\GssBufferDescStruct.cs" />
-    <Compile Include="Native\GssChannelBindingsStruct.cs" />
-    <Compile Include="Native\GssOidDescStruct.cs" />
-    <Compile Include="Native\NativeMethods.cs" />
-    <Compile Include="Native\NativeMethods32.cs" />
-    <Compile Include="Native\NativeMethods64.cs" />
-    <Compile Include="Utility\Pinned.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AuthenticationModule\SpNegoAuthenticationModule.cs" />
-    <Compile Include="Utility\TraceLog.cs" />
-    <Compile Include="Utility\ValueType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GSSAPI.pfx" />
   </ItemGroup>
+  <Import Project="..\GSSAPI\GSSAPI.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>COPY "$(TargetPath)" "$(SolutionDir)GSSAPI.Packager\lib\$(ProjectName)\$(TargetFileName)" /Y
+COPY "$(TargetDir)$(TargetName).pdb" "$(SolutionDir)GSSAPI.Packager\lib\$(ProjectName)\$(TargetName).pdb" /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

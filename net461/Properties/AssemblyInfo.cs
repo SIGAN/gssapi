@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GSSAPI")]
-[assembly: AssemblyDescription("GSSAPI implementation wrapper for .NET")]
+[assembly: AssemblyTitle("net461")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("IT Complex, LLC")]
-[assembly: AssemblyProduct("GSSAPI")]
-[assembly: AssemblyCopyright("Copyright © IT Complex, LLC 2017")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("net461")]
+[assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f4daee41-a572-45b3-88db-146d20d51c22")]
+[assembly: Guid("b381eaf8-9160-478a-b923-d0bf00a70d66")]
 
 // Version information for an assembly consists of the following four values:
 //
