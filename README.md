@@ -9,6 +9,8 @@ Install MIT Kerberos Client for Windows.
 
 Authenticate to it using GUI or using keytab.
 
+Initilize GSS API via call to Gss.InitializeAndOverrideApi.
+
 Use your .NET application to make http queries or authenticate to services.
 
 
