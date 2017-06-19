@@ -1,5 +1,5 @@
-# gssapi
-GSSAPI implementation
+# GSSAPI.NET
+GSSAPI wrapper
 
 # What is it
 Wrapper library with additional simplified functionality for WebRequest handling. Includes IAuthenticationModule implementation.
