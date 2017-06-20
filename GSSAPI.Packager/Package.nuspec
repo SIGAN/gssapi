@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ITComplex.GSSAPI.NET</id>
-    <version>0.2.0.0</version>
+    <version>0.3.0.0</version>
     <title>GSSAPI.NET</title>
     <authors>Igor Solomatov</authors>
     <owners>IT Complex, LLC</owners>
@@ -12,9 +12,9 @@
     <projectUrl>https://github.com/SIGAN/gssapi</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Added multiple (4.5+) targets</releaseNotes>
+    <releaseNotes>Fixed assembly version numbers and other attributes</releaseNotes>
     <copyright>IT Complex, LLC 2017</copyright>
-    <tags>GSSAPI .NET Wrapper Authentication C#</tags>
+    <tags>GSSAPI GSS-API .NET Wrapper Authentication C#</tags>
     <dependencies></dependencies>
     <references></references>
   </metadata>

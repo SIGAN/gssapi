@@ -82,6 +82,33 @@
     <Content Include="lib\net46\GSSAPI.dll" />
     <Content Include="lib\net46\GSSAPI.pdb" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\net451\net451.csproj">
+      <Project>{7622591f-3a8a-4954-b118-885f0c16aaeb}</Project>
+      <Name>net451</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\net452\net452.csproj">
+      <Project>{20ac6408-8dc8-478a-bc9a-b559188a5fe1}</Project>
+      <Name>net452</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\net45\net45.csproj">
+      <Project>{f4daee41-a572-45b3-88db-146d20d51c22}</Project>
+      <Name>net45</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\net461\net461.csproj">
+      <Project>{b381eaf8-9160-478a-b923-d0bf00a70d66}</Project>
+      <Name>net461</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\net46\net46.csproj">
+      <Project>{54244c1e-7268-4c12-83b2-58209203e529}</Project>
+      <Name>net46</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
